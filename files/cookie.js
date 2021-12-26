@@ -6,7 +6,7 @@
         document.getElementById("tjuid").value = $.cookie('id');
     }
 })()
-function cw() {
+function c() {
     if (document.getElementById("tjuid").value == "0") {
         $.removeCookie('gate', { path: '/' });
         $.removeCookie('num', { path: '/' });
