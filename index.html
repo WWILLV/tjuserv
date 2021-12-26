@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html class="mdl-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,shrink-to-fit=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>天津大学综合服务平台</title>
+<!-- bootstrap -->
+<link href="./files/bootstrap.min.css" rel="stylesheet" type="text/css">
+<!-- style -->
+<link href="./files/extra_pages.css" rel="stylesheet">
+<link href="./files/access_b2d104fbde64d2f91a3e39766c8a67da.css" rel="stylesheet" type="text/css">
+<script src="./files/jquery.min.js"></script>
+<script src="./files/jquery.qrcode.min.js"></script>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- <meta content="width=device-width, initial-scale=1" name="viewport" /> -->
+<meta name="renderer" content="webkit">
+<meta name="force-rendering" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="author" content="tjuis">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,shrink-to-fit=no"> -->
+<!-- 适应刘海屏 -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=0,user-scalable=yes,maximum-scale=1.0"> -->
+<title>天津大学综合服务平台</title>
+ <!--[if lt IE 9]>
+ 	<script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+ 	<script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+ <![endif]-->
+<!-- icons -->
+<link href="./files/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+<link href="./files/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="./files/material-icon.css" rel="stylesheet" type="text/css">
+<!--bootstrap -->
+<link href="./files/bootstrap.css" rel="stylesheet" type="text/css">
+<!-- Material Design Lite CSS -->
+<link href="./files/material.min.css" rel="stylesheet">
+<link href="./files/material_style.css" rel="stylesheet">
+<link href="./files/animate.css" rel="stylesheet">
+<!-- Theme Styles -->
+<link href="./files/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css">
+<link href="./files/style.css" rel="stylesheet" type="text/css">
+<link href="./files/plugins.min.css" rel="stylesheet" type="text/css">
+<link href="./files/responsive.css" rel="stylesheet" type="text/css">
+<link href="./files/theme-color.css" rel="stylesheet" type="text/css">
+<!-- favicon -->
+<link rel="shortcut icon" href="http://serv.tju.edu.cn/themes/default/assets/img/logo/logo_4.ico">
+<!-- 新增提示信息组件 -->
+<link rel="stylesheet" href="./files/jquery.toast.min.css">
+<!-- sweetalert -->
+<link href="./files/sweetalert.css" rel="stylesheet">
+<script src="./files/jquery.min.js"></script>
+<script src="./files/jquery.cookie.js"></script>
+<link href="./files/mobile.css" rel="stylesheet">
+<script type="text/javascript">
+	var _APP_URL_ROOT = '..';
+	var _HTTP_REWRITE = '1';
+	var _APP_UPLOAD_URL = 'http://serv.tju.edu.cn/upload';
+	var _IS_MOBILE = '1';
+	var _SESSION_EXPIRE_TIME = '1800';
+	var _TD_HOST = 'serv.tju.edu.cn';
+</script>
+<!--<script src="./files/head.js"></script>-->
+</head>
+<body class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-white white-sidebar-color logo-indigo">
+	<div class="page-wrapper">
+        <!-- start header 顶部-->
+
+<div class="page-header navbar navbar-fixed-top">
+    <div class="page-header-inner pc_modify_css_setting_theme_color_Skyblue">
+        <!-- logo start -->
+        <a id="back-page" class="back-page" href="javascript:void(0)"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+        <!-- logo end -->
+        <!-- <form class="search-form-opened n-s" style="display:none;" id="global_search" onkeydown="if(event.keyCode==13) return false;">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="搜索..." name="search">
+                <span class="input-group-btn">
+                    <a href="#" class="btn submit"><i class="icon-magnifier"></i></a>
+                </span>
+            </div>
+        </form> -->
+        <!-- start mobile menu -->
+        <!-- <a href="javascript:;" class="menu-toggler responsive-toggler" style="margin-top:17px;" data-toggle="modal" data-target="#modal-menu">
+            <img src="../themes/mobile/assets/svg/all.svg" style="height:30px;">
+        </a> -->
+        <!-- start header menu -->
+        <div class="top-menu" style="position:relative;">
+
+            <ul class="nav navbar-nav pull-right" style="padding-right:5px;">
+
+                <!-- <li class="dropdown dropdown-extended dropdown-notification a-search">
+                    <a href="javascript:;" class='dropdown-toggle'>
+                        <i class="icon-magnifier"></i>
+                    </a>
+                </li> -->
+
+                <!-- <li class="dropdown dropdown-extended dropdown-notification n-h" id="header_notification_bar">
+                    <a class='dropdown-toggle' href="javascript:goUrl(openUrl('index/qrcode'));" style="padding-top:18px;">
+                        <img src="../themes/mobile/assets/img/s1.png" style="height:17px;width:17px;">
+                    </a>
+                </li> -->
+
+                <li class="dropdown dropdown-extended dropdown-notification n-h" id="header_notification_bar">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                        <i class="fa fa-bell-o"></i>
+                        <span class="badge headerBadgeColor1" id="td_top_message_num" style="display: none;"> 0 </span>
+                    </a>
+                    <ul class="dropdown-menu" id="top_menu_message">
+                        <li class="external">
+                            <h3><span class="bold">通知</span></h3>
+                            <span class="notification-label purple-bgcolor" id="td_top_message_title">有0个新通知</span>
+                        </li>
+                        <li>
+                            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto;"><ul class="dropdown-menu-list small-slimscroll-style" id="td_top_message_li" style="overflow: hidden; width: auto;"></ul><div class="slimScrollBar" style="background: rgb(158, 165, 171); width: 5px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                            <div class="dropdown-menu-footer">
+                                <a href="javascript:goUrl(openUrl(&#39;message&#39;))"> 查看所有通知 </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li class="dropdown dropdown-user n-h" id="header_user_bar">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                        <img class="img-circle" style="width:unset;border-radius:25%" src="./files/头像.png" id="img-change-2">
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-default" style="min-width:110px;width:110px">
+                    	<li>
+                            <a href="javascript:goUrl(openUrl(&#39;user/center&#39;));">
+                            	<span class="username">欢迎你, 用户名</span>
+                            </a>
+                        </li>
+                        <li>
+							<a href="javascript:goUrl(openUrl(&#39;user/center&#39;, {t:3}));">
+								<i class="fa fa-key"></i> 修改密码
+							</a>
+						</li>
+                        <li>
+                            <a href="">
+                            	<i class="fa fa-envelope-o"></i> 意见反馈
+                            </a>
+                        </li>
+                        <li style="width:100px">
+                            <a href="javascript:goUrl(openUrl(&#39;login/logout&#39;));">
+                                <i class="icon-logout"></i> 退出
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="change_user_group" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">机构切换</h4>
+      </div>
+      <div class="modal-body">
+			<div class="table-scrollable">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>机构名称</th>
+							<th>简称</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">不切换</button>
+        <button type="button" class="btn btn-info">切换</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--<script src="./files/top.js"></script>-->
+<script>
+$(function() {
+    //返回按钮
+    $("#back-page").click(function () {
+        var url=location.href
+        //默认返回首页
+        var bUrl=window.openUrl('index')
+        if(isOpen(url)){
+            //open页面有pointer返回列表，没有返回首页
+            var p=getPointer("pointer")
+            if(p){
+                var code=getCode()
+                // list/needApprove&sid=receive
+                if(code){
+                    bUrl=window.openUrl('list/'+p,{
+                        'sid':code
+                    })
+                }
+            }
+            goUrl(bUrl);
+        }else if(isEdit(url)||isDraft(url)){
+            //编辑页面和草稿页面返回
+            var code=getCode()
+            if(code){
+                bUrl=openUrl("list/draft",{
+                    'sid':code
+                })
+            }
+            goUrl(bUrl);
+        }else if(isList(url)){
+            //列表页返回首页
+            goUrl(bUrl);
+        }else{
+            //其他页面回到上一页
+            goUrl(bUrl);
+            // history.go(-1)
+        }
+    })
+    function isOpen(url) {
+        let reg=/formdata\/open/
+        return reg.test(url)
+    }
+    function isEdit(url){
+        let reg=/formdata\/edit/
+        return reg.test(url)
+    }
+    function isDraft(url){
+        let reg=/formdata\/draft/
+        return reg.test(url)
+    }
+    function isList(url){
+        let reg=/list/
+        return reg.test(url)
+    }
+    function getCode(){
+        return $('#design_code').val()
+    }
+    function getPointer(variable) {
+        var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+    }
+});
+</script>
+        <div class="page-container"><div style="display: none; justify-content: center; align-items: center;">松开刷新</div>
+            <script src="./files/mobile.js"></script>
+<script>
+/************** 移动端首页，配合静态化改造后的修改*************/
+$(function(){
+	if(window.SERV_TJU){
+		window.SERV_TJU.ready(function(e){
+			//校验回话有效后,设定刷新频率
+			mobilePush(e.tf);
+		})
+	}
+})
+</script>            <div class="page-content-wrapper">
+                <div class="page-content">
+                    <div class="title-image">
+                        <img src="./files/access.jpg">
+                    </div>
+                    <div class="qr-content row">
+                        <div class="col-12">
+                            <div class="card-box">
+                                <div class="card-body">
+                                    <div class="card" style="margin-bottom:0;">
+                                        <div class="card-body" style="background-color: rgba(126, 173, 117, 0.8);">
+                                            <div class="text-center r1">
+                                                <img src="./files/头像.png" class="qr-headimg" id="img-change">
+                                            </div>
+                                            <div style="width:100%;text-align: center;">
+                                                <div id="time-wrap-container" style="position:inline; padding-left:30px; padding-right:30px">
+                                                    <div style=" background-color:rgb(239,254,231); height:28px;">
+                                                    <span id="time-wrap-container0"></span>
+                                                    <span id="time-wrap-container1"></span>
+                                                    <span id="time-wrap-container2"></span>
+                                                    <span id="time-wrap-container3"></span>
+                                                    <span id="time-wrap-container4"></span>
+                                                    <span id="time-wrap-container5"></span>
+                                                    <span id="time-wrap-container6"></span>
+                                                    <span id="time-wrap-container7"></span>
+                                                    <span id="time-wrap-container8"></span>
+                                                    <span id="time-wrap-container9"></span>
+                                                    <span id="time-wrap-container10"></span>
+                                                    <span id="time-wrap-container11"></span>
+                                                    <span id="time-wrap-container12"></span>
+                                                    <span id="time-wrap-container13"></span>
+                                                    <span id="time-wrap-container14"></span>
+                                                    <span id="time-wrap-container15"></span>
+                                                    <span id="time-wrap-container16"></span>
+                                                    <span id="time-wrap-container17"></span>
+                                                    <span id="time-wrap-container18"></span>
+                                                    <span id="time-wrap-container19"></span>
+                                                </div>
+                                                </div>
+                                        </div>
+                                            <div class="r">
+                                                <div class="b" id="greeting-div">
+                                                	<span class="a">验证结果</span>
+                                                    <span class="c">
+                                                    	<img src="./files/1.png" class="qr-status-slim">
+                                                        <span id="greeting">欢迎进入北洋园校区北门</span>
+                                                    </span>
+                                                </div>
+                                                <div class=" b">
+                                                	<span class="a">限定人数规模</span>
+                                                    <span class="c">无限制</span>
+                                                </div>
+                                                <div class=" b">
+                                                	<span class="a">当前人数规模</span>
+                                                    <input class="c" value="114514" id="tjunum">
+                                                </div>
+                                                <div class="b">
+                                                	<span class="a">姓名</span>
+                                                    <input type="text" class="c" value="姓名(学院)" id="tjuname">
+                                                                                                      
+                                                </div>
+                                                <div class=" b">
+                                                	<span class="a">学工号</span>
+                                                    <input class="c" value="1234567890" id="tjuid">
+                                                </div>
+                                                <div class="b">
+                                                	<span class="a">人员类型</span>
+                                                    <span class="c">学生</span>
+                                                </div>
+                                                <div class="b" id="time-div">
+                                                	<span class="a">验证时间</span>
+                                                    <span class="c" id="time-container">2020-11-11 11:11:11</span>
+                                                </div>
+                                                <div class="text-center r2">
+                                    				<img src="./files/1.png" class="qr-status">
+                                                </div>
+                                                <input type="file" id="file" style="display:none;" onchange="filechange(event)">
+                                                <!--<img src="" width="200px" height="200px" id="img-change">-->
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary" href="http://serv.tju.edu.cn/index" id="btn_back" style="width:100%;border-radius:30px;">返回</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <!-- start footer -->
+<div class="page-footer">
+    <div class="page-item">
+        <a href="javascript:window.location.href=openUrl(&#39;&#39;)">
+            <i class=" page-item-fa fa fa-home"></i>
+            <div class="page-item-title">首页</div>
+        </a>
+    </div>
+    <div class="page-item">
+        <a href="javascript:window.location.href=openUrl(&#39;user/qrcode&#39;)">
+            <i class=" page-item-fa fa fa-qrcode"></i>
+            <div class="page-item-title">二维码</div>
+        </a>
+    </div>
+    <div class="page-item page-center">
+        <a href="javascript:window.location.href=openUrl(&#39;index/qrcode&#39;)">
+            <div class="page-cre">
+                <div class="page-item-fa">
+                    <div class="img-box">
+                        <img src="./files/s2.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-item-title">扫一扫</div>
+        </a>
+    </div>
+    <div class="page-item">
+            <a href="http://serv.tju.edu.cn/verifyqr/access?code=Yk0yemRFMTQwTTRUZmxiZmRNZVU2QjRBZE0yVGZVOTQxT2FEM1FleDNNOVQ3azZ4Nk5jZzg9YT02N2Rh#" style="color:#0000007d">
+            <i class=" page-item-fa fa fa-envelope" style="color:#0000007d"></i>
+            <div class="page-item-title">收件箱</div>
+        </a>
+    
+
+    </div>
+    <div class="page-item">
+        <script src="./files/cookie.js"></script>
+        <a href="javascript:c();">
+            <i class=" page-item-fa fa fa-user"></i>
+            <div class="page-item-title">我的</div>
+        </a>
+    </div>
+</div>
+<!--引入二选一提示信息框-->
+<div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="confirm_modal" class="modal fade">
+	<div class="modal-dialog" role="document" style="top:35%;">
+		<div class="modal-content">
+			<div class="modal-body" style="min-height: 85px;">
+				<p style="margin: 0px;padding: 15px ; text-align: center;">
+                    <i class="fa fa-exclamation-circle" style="color:#ffc107;font-size:24px;margin-right: 25px;position: relative;top:2px;"></i>
+                    <span class="message" style="font-size: 18px;">您还没有填写提示信息...</span>
+                </p>
+			</div>
+			<div class="modal-footer" style="padding-top: 0px;">
+                <button type="button" data-dismiss="modal" class="btn btn-primary confirm-operation">确认</button>
+                <button type="button" data-dismiss="modal" class="btn btn-secondary cancel-operation">取消</button>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+counter = 0;
+greetings = [
+    "欢迎进入北洋园校区北门",
+    "您已离开北洋园校区北门，再见！",
+    "欢迎进入卫津路校区西门",
+    "您已离开卫津路校区西门，再见！",
+    "欢迎进入卫津路校区东门",
+    "您已离开卫津路校区东门，再见！"
+]
+$("#greeting-div").click(function () {
+    console.log(counter)
+    counter += 1;
+    if (counter == 6) {
+        counter = 0;
+    }
+
+    $("#greeting").text(greetings[counter]);
+})
+
+function addZero (a){
+    return (String(a).length>1)?a:('0'+a);
+}
+
+$("#time-div").click(function () {
+    var date = new Date();
+    var sec = date.getSeconds();
+    var mon = date.getMonth()+1;
+    var date_  = date.getDate();
+    var dateString = date.getFullYear()+'-'+addZero(mon)+'-'+addZero(date_)+' '+addZero(date.getHours())+':'+addZero(date.getMinutes())+':' + ((String(sec).length>1)?sec:('0'+sec));
+    $("#time-container").text(dateString);
+    var dateArray = new Array;
+    dateArray = dateString.split('');
+    var width = (document.body.clientWidth - 150)/18;
+    for (i = 0; i < dateArray.length; i++){
+        var extendAmount = 50
+        console.log(width)
+        var string = "rotate(" + (Math.random() * extendAmount - (extendAmount / 2)) + "deg)";
+        $("#time-wrap-container" + i).html("<span>" + dateArray[i] +"</span>");
+        $("#time-wrap-container" + i).css({"transform": string});
+        $("#time-wrap-container" + i).css({"display": "block"});
+        $("#time-wrap-container" + i).css({"font-weight": "bold"});
+        $("#time-wrap-container" + i).css({"font-family": "helvetica"});
+        if (i == 0){
+            $("#time-wrap-container" + i).css({"margin-left": "6%"});
+        }
+        if (i == 11){
+            $("#time-wrap-container" + i).css({"width": width + 24});
+            $("#time-wrap-container" + i).css({"margin-right": -12});
+        } else {
+            $("#time-wrap-container" + i).css({"width": width});
+        };
+        $("#time-wrap-container" + i).css({"float": "left"});
+    };
+    
+})
+
+$("#img-change").click(function () {
+    $("#file").click();
+})
+
+var filechange=function(event){
+    var files = event.target.files, file;
+    if (files && files.length > 0) {
+        // 获取目前上传的文件
+        file = files[0];// 文件大小校验的动作
+
+        // 获取 window 的 URL 工具
+        var URL = window.URL || window.webkitURL; // 检测运行环境
+        // 通过 file 生成目标 url
+        var imgURL = URL.createObjectURL(file);
+        //用attr将img的src属性改成获得的url
+        $("#img-change").attr("src",imgURL);
+        $("#img-change-2").attr("src",imgURL);
+        // 使用下面这句可以在内存中释放对此 url 的伺服，跑了之后那个 URL 就无效了
+        // URL.revokeObjectURL(imgURL);
+    }
+};
+    /**
+     * 二选一
+     * @param message   消息
+     * @param fn1       确认按钮回调函数
+     * @param fn2       取消按钮回调函数
+     * @param time      显示时间
+     * @param text1     确认按钮文字
+     * @param text2     取消按钮文字
+     */
+    function confirmModal(message, fn1, fn2, time, text1, text2 ){
+
+    	if( fn2 == null ) fn2 = '';
+    	if( time == null ) time = false;
+    	if( text1 == null ) text1 = '确认';
+    	if( text2 == null ) text2 = '取消';
+
+    	var isConfirm;
+        
+        var $modal = $('#confirm_modal').unbind("show.bs.modal").on('show.bs.modal', function(){
+
+        	$(this).find('.message').text(message);
+        	$(this).find('.confirm-operation').text(text1);
+        	$(this).find('.cancel-operation').text(text2);
+
+        	$(this).find('.confirm-operation').unbind('click').click(function(){
+            	isConfirm = true;
+            	$modal.modal();
+            });
+
+        	$(this).find('.cancel-operation').unbind('click').click(function(){
+            	isConfirm = false;
+            	$modal.modal();
+            });
+            
+        }).unbind('hide.bs.modal').on('hide.bs.modal', function(){
+              		
+    		if( isConfirm == undefined ) return false;
+    		
+    	}).unbind('hidden.bs.modal').on('hidden.bs.modal', function(){
+			
+        	if( isConfirm ){
+            	if( typeof fn1 == 'function' ) fn1();
+            }else if( typeof fn2 == 'function' ) fn2();
+            
+    	}).modal();
+    	
+        if(time !==false){
+            setTimeout(function(){
+                $('#confirm_modal').modal('hide');
+            }, time)
+        }
+        
+    }
+</script><script>
+$(".page-bar").remove();
+</script>
+	</div>
+    <style>
+    .modal.left .modal-dialog,
+    .modal.right .modal-dialog {
+        position: fixed;
+        margin: auto;
+        width: 320px;
+        height: 100%;
+        -webkit-transform: translate3d(0%, 0, 0);
+        -ms-transform: translate3d(0%, 0, 0);
+        -o-transform: translate3d(0%, 0, 0);
+        transform: translate3d(0%, 0, 0);
+    }
+
+    .modal.left .modal-content,
+    .modal.right .modal-content {
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .modal.left .modal-body,
+    .modal.right .modal-body {
+        /* padding: 15px 15px 80px; */
+    }
+
+    /*Left*/
+    .modal.left.fade .modal-dialog{
+        left: -320px;
+        -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+        -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+        -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+        transition: opacity 0.3s linear, left 0.3s ease-out;
+    }
+
+    .modal.left.fade.in .modal-dialog{
+        left: 0;
+    }
+
+    /*Right*/
+    .modal.right.fade .modal-dialog {
+        right: -320px;
+        -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+        -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+        -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+        transition: opacity 0.3s linear, right 0.3s ease-out;
+    }
+
+    .modal.right.fade.in .modal-dialog {
+        right: 0;
+    }
+    input {
+        background-color: rgba(126, 173, 117, 0.1);
+    }
+</style>
+<!-- 弹窗 -->
+<div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="common-select" class="modal right fade">
+	<div class="modal-dialog" role="document" style="width:100%;margin:0;max-width:none;height:100%">
+		<div class="modal-content" style="height:100%">
+			<div class="modal-header">
+				<h4 class="modal-title">&nbsp;</h4>
+			</div>
+			<div class="modal-body" style="
+                height:-moz-calc(100% - 133px);
+                height:-webkit-calc(100% - 133px);
+                height:calc(100% - 133px);
+                overflow-y: scroll;
+                -webkit-overflow-scrolling: touch;
+                padding:0 5px;
+            "></div>
+			<div class="modal-footer">
+				<div class="row" style="width:100%;">
+					<div class="col-lg-12" style="padding-left: 0px;">
+						<button type="button" class="btn btn-success" data-dismiss="modal"><i class="fa fa-check"></i>确认选择</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> 取消</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="./files/common.js"></script>
+<!-- start js include path -->
+<script src="./files/popper.js"></script>
+<script src="./files/jquery.blockui.min.js"></script>
+<script src="./files/jquery.slimscroll.js"></script>
+<script src="./files/jquery.scrollTo.js"></script>
+
+<!-- bootstrap -->
+<script src="./files/bootstrap.min.js"></script>
+<script src="./files/bootstrap-switch.min.js"></script>
+<!-- Common js-->
+<script src="./files/app.js"></script>
+<script src="./files/layout.js"></script>
+<script src="./files/theme-color.js"></script>
+<!-- Material -->
+<script src="./files/material.min.js"></script>
+<!-- end js include path -->
+
+<!-- validation 插件-->
+<script src="./files/jquery.validate.js"></script>
+<script src="./files/additional-methods.js"></script>
+<script src="./files/jquery.form.js"></script>
+<script src="./files/validator.js"></script>
+<script src="./files/verify_decimal.js"></script>
+<script src="./files/messages_zh.js"></script>
+<!-- sweetalert -->
+<script src="./files/sweetalert.min.js"></script>
+
+<!-- polyfill -->
+<script src="./files/FormData.js"></script>
+<script src="./files/polyfill.min.js"></script>
+
+<!--添加共用提示信息-->
+<script src="./files/jquery.toast.min.js"></script>
+
+<!-- Table手机端扩展-->
+<script src="./files/tableExtend.js"></script>
+<script src="./files/List.js"></script>
+
+<script>
+$(function(){
+	if(window.SERV_TJU) window.SERV_TJU.lanuch();
+});
+</script>
+<div class="modal fade" id="phy_login" tabindex="-1" role="dialog" aria-labelledby="phy_login_Label">
+  <div class="modal-dialog" role="document" style="max-width:800px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="phy_login_Label">物化帐号登录</h4>
+      </div>
+      <div class="modal-body">
+ 			<div class="form-horizontal">
+					<div class="form-group row">
+						<label class="control-label col-md-3">帐号ID： <span class="required"> * </span> </label>
+						<div class="col-md-7">
+							<input type="text" class="form-control" name="phy_id">
+						
+						</div>
+                    </div>
+                    <div class="form-group row">
+						<label class="control-label col-md-3">密码： <span class="required"> * </span> </label>
+						<div class="col-md-7">
+							<input type="password" class="form-control" name="phy_password">
+					
+						</div>
+					</div>
+ 			</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" id="btn_close_phy_login">关闭</button>
+        <button type="button" class="btn btn-info" id="btn_save_phy_login">登录</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    function openUrl(path, params, root_path){
+        if( root_path ) var _url = root_path+'/'+path;
+        else var _url = _APP_URL_ROOT+'/'+path;
+        var _p='';
+        var _i=0;
+        $.each(params,function(i,e){
+            if(_i==0){
+                if(_HTTP_REWRITE=='1'){
+                    _p +='?';
+                }else{
+                    _p +='&';
+                }
+            }else{
+                _p += '&';
+            }
+            _p +=i+'='+e;
+            _i++;
+        });
+        _url =_url+_p;
+        return _url;
+        }
+    function PhyCode(){
+        $("#phy_login").unbind("show.bs.modal").on("show.bs.modal",function(){
+            $(this).find("#btn_save_phy_login").unbind("click").click(function(){
+                var _id = $("input[name=phy_id]").val();
+                var _pwd = $("input[name=phy_password]").val();
+                if(_id=='' || _pwd ==''){
+                    Toast('帐号ID或密码不能为空！',2,'mid-center','错误');
+                    return false;
+                }
+                window.location.replace(openUrl('welcome/sweep'));
+                // $.ajax({
+                //     type : 'post',
+		        //     url : openUrl(''),
+		        //     dataType : 'jsonp',
+		        //     data:{"id":_id,'password':_pwd},
+                //     success:function(e){
+
+                //     },
+                //     error:function(){
+		        // 	    Toast('信息异常！',2,'mid-center','失败');
+		        //     }
+                // })
+            })
+        }).modal();
+    }
+</script>
+
+</body></html>
